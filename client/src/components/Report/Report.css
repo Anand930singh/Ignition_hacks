@@ -1,0 +1,43 @@
+.cnt-report{
+    padding: 20px 72px;
+}
+.stages{
+    display: flex;
+    justify-content: center;
+}
+.stage{
+    display: "flex";
+    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: column;
+    gap: 6px;
+    /* margin: auto 8px; */
+    width: 72px;
+}
+.clBox{
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    .cnt-report{
+        padding: 20px 10px;
+    }
+    .stages{
+        flex-direction: column;
+    }
+    .stage{
+        flex-direction: row;
+        width: 100%;
+    }
+    .clBox{
+        width: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cnt-report{
+        padding: 20px 10px;
+        margin-bottom: 2rem;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}
